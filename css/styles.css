@@ -1,0 +1,24 @@
+body {
+   background-color: #FDFCE5;
+}
+
+
+  hr {
+    border-style: none;
+    border-color: #f7e8f6;
+    border-top: 8px dotted #D7E9F7;
+    width: 15%;
+    background-color: transparent
+  }
+
+
+
+h2 {
+  color: #F4D19B;
+  font-weight: 900;
+}
+
+h1 {
+  color: #F4D19B;
+  font-weight: 900;
+}
