@@ -14,13 +14,32 @@
       <td>
         <h1><em><strong>Kimberly Higby</strong></em></h1>
         <h3>Welcome to my site.</h3>
-        <button onclick="document.getElementById('today').innerHTML=Date()">Click for current date and time?</button>
+        <button onclick="document.getElementById('today').innerHTML=Date()">Click for current date and time.</button>
         <p id="today"></p>
       </td>
-
     </tr>
-
   </table>
+  <hr>
+  <br>
+  <button onclick="document.getElementById('resters').innerHTML=randomrest()">Click for restaurant suggestion.</button>
+  <p id="resters"></p>
+  <br>
+  <script>
+    function randomrest() {
+
+      return rests[Math.floor(Math.random() * rests.length)];
+
+    }
+
+    const rests = ["Rosa's", "Bubba's", "Coyote Bluff", "Red River", "The Catch", "Big Texas", "Lone Star", "Whataburger", "Subway", "Firehouse", "Jorge's", "Taco Joe's", "Mexico Lindo", "El Bracero",
+      "Los Braceros", "El Tejavan"
+    ]
+    
+
+  </script>
+
+
+
   <hr size "10" noshade>
 
   <h2><strong>My Hobbies</strong></h2>
