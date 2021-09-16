@@ -14,7 +14,7 @@
       <td>
         <h1><em><strong>Kimberly Higby</strong></em></h1>
         <h3>Welcome to my site.</h3>
-        <button onclick="document.getElementById('today').innerHTML=Date()">Click for current date and time.</button>
+        <button class="btn" onclick="document.getElementById('today').innerHTML=Date()">Click for current date and time.</button>
         <p id="today"></p>
       </td>
     </tr>
@@ -22,9 +22,9 @@
   <hr>
   <br>
   <h1>Random restaurant picker</h1>
-  <p>When no none wants to pick a restaurant, click the button below for a suggestion.</p>
+  <p>When no one wants to pick a restaurant, click the button below for a suggestion.</p>
 
-  <button onclick="document.getElementById('resters').innerHTML=randomrest()">Click for restaurant suggestion.</button>
+  <button class="btn" onclick="document.getElementById('resters').innerHTML=randomrest()">Click for restaurant suggestion.</button>
   <p id="resters"></p>
   <br>
   <script>
@@ -37,14 +37,24 @@
     const rests = ["Rosa's", "Bubba's", "Coyote Bluff", "Red River", "The Catch", "Big Texan", "Lone Star", "Whataburger", "Subway", "Firehouse", "Jorge's", "Taco Joe's", "Mexico Lindo", "El Bracero",
       "Los Braceros", "El Tejavan"
     ]
-
-
   </script>
-
-
 
   <hr size "10" noshade>
 
+  <h2><strong>Dice</strong></h2>
+  <table>
+  <tr>
+    <td><img src="onedice.png"></td>
+    <td><img src="twodice.png"></td>
+    <td><img src="threedice.png"></td>
+  </tr>
+  <tr>
+    <td><img src="fourdice.png"></td>
+    <td><img src="fivedice.png"></td>
+    <td><img src="sixdice.png"></td>
+  </tr>
+</table>
+  <hr>
   <h2><strong>My Hobbies</strong></h2>
   <a href="hobbies.html">Hobbies</a>
   <hr>
