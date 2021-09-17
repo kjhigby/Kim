@@ -34,7 +34,8 @@
 
     }
 
-    const rests = ["Rosa's", "Bubba's", "Coyote Bluff", "Red River", "The Catch", "Big Texan", "Lone Star", "Whataburger", "Subway", "Firehouse", "Jorge's", "Taco Joe's", "Mexico Lindo", "El Bracero",
+    const rests = ["Rosa's", "Bubba's", "Coyote Bluff", "Red River", "The Catch", "Big Texan", "Lone Star", "Whataburger", "Subway",
+      "Firehouse", "Jorge's", "Taco Joe's", "Mexico Lindo", "El Bracero",
       "Los Braceros", "El Tejavan"
     ]
   </script>
@@ -42,7 +43,40 @@
   <hr size "10" noshade>
 
   <h2><strong>Dice</strong></h2>
-  <table>
+
+  <img id="myImg" src="single.png" width="30%" height="auto">
+  <br>
+
+  <button class="btn" onclick="clickevent()">Roll the dice.</button>
+  <script>
+    var rannum;
+
+    function clickevent() {
+      rannum = Math.floor(Math.random() * 6) + 1;
+
+
+      if (rannum == 1) {
+        document.getElementById("myImg").src = "onedice.png";
+      }
+      if (rannum == 2) {
+        document.getElementById("myImg").src = "twodice.png";
+      }
+      if (rannum == 3) {
+        document.getElementById("myImg").src = "threedice.png";
+      }
+      if (rannum == 4) {
+        document.getElementById("myImg").src = "fourdice.png";
+      }
+      if (rannum == 5) {
+        document.getElementById("myImg").src = "fivedice.png";
+      }
+      if (rannum == 6) {
+        document.getElementById("myImg").src = "sixdice.png";
+      }
+    }
+  </script>
+
+  <!-- <table>
   <tr>
     <td><img src="onedice.png"></td>
     <td><img src="twodice.png"></td>
@@ -53,7 +87,13 @@
     <td><img src="fivedice.png"></td>
     <td><img src="sixdice.png"></td>
   </tr>
-</table>
+</table> -->
+
+
+
+
+
+
   <hr>
   <h2><strong>My Hobbies</strong></h2>
   <a href="hobbies.html">Hobbies</a>
