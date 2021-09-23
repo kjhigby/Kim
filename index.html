@@ -21,30 +21,43 @@
   </table>
   <hr>
   <br>
-  <h1>Random restaurant picker</h1>
-  <p>When no one wants to pick a restaurant, click the button below for a suggestion.</p>
+  <div class="middle-container">
+    <h1>Dobby's restaurant picker</h1>
+    <p>When no one wants to pick a restaurant, ask Dobby for a suggestion.</p>
+    <br>
+    <div class="rest">
+      <button class="btn" onclick="document.getElementById('resters').innerHTML=randomrest()">Sit down restaurants 🥣.</button>
+      <p id="resters"></p>
 
-  <button class="btn" onclick="document.getElementById('resters').innerHTML=randomrest()">Click for restaurant suggestion.</button>
-  <p id="resters"></p>
-  <br>
-  <script>
-    function randomrest() {
+      <script>
+        function randomrest() {
+          return rests[Math.floor(Math.random() * rests.length)];
+        }
 
-      return rests[Math.floor(Math.random() * rests.length)];
+        const rests = ["Bubba's", "Coyote Bluff", "Red River", "The Catch", "Big Texan", "Lone Star", "Firehouse",
+          "Jorge's", "Taco Joe's", "Mexico Lindo", "El Bracero", "Los Braceros", "El Tejavan"
+        ]
+      </script>
+    </div>
 
-    }
+    <div class="fastrest">
+      <button class="btn" onclick="document.getElementById('fastresters').innerHTML=fastrandomrest()">Fast restaurants 🥪.</button>
+      <p id="fastresters"></p>
 
-    const rests = ["Rosa's", "Bubba's", "Coyote Bluff", "Red River", "The Catch", "Big Texan", "Lone Star", "Whataburger", "Subway",
-      "Firehouse", "Jorge's", "Taco Joe's", "Mexico Lindo", "El Bracero",
-      "Los Braceros", "El Tejavan"
-    ]
-  </script>
+      <script>
+        function fastrandomrest() {
+          return fastrests[Math.floor(Math.random() * fastrests.length)];
+        }
 
+        const fastrests = ["Rosa's", "Whataburger", "Subway", "Firehouse subs", "Arby's", "Burger King", "Schlotzsky's"]
+      </script>
+    </div>
+  </div>
   <hr size "10" noshade>
 
   <h2><strong>Dice</strong></h2>
 
-  <img id="myImg" src="single.png" width="90px" height="90px">
+  <img id="myImg" src="onedice.png" width="90px" height="90px">
   <br>
 
   <button class="btn" onclick="clickevent()">Roll the dice.</button>
@@ -53,7 +66,6 @@
 
     function clickevent() {
       rannum = Math.floor(Math.random() * 6) + 1;
-
 
       if (rannum == 1) {
         document.getElementById("myImg").src = "onedice.png";
@@ -88,11 +100,6 @@
     <td><img src="sixdice.png"></td>
   </tr>
 </table> -->
-
-
-
-
-
 
   <hr>
   <h2><strong>My Hobbies</strong></h2>
